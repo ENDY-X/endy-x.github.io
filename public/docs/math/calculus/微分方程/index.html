@@ -1,0 +1,94 @@
+<!doctype html><html lang=en dir=ltr><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="
+  一阶线性微分方程
+  #
+
+
+
+
+
+  \[
+\dfrac{dy}{dx}+P(x)y=Q(x)
+\]
+
+
+通解:
+
+  \[
+y=e^{-\int P(x)dx} \left[ \int Q(x) e^{\int P(x)dx}dx + C \right]\]
+
+
+注意还有的形式是:
+
+  \[\dfrac{dx}{dy} + P(y)x=Q(y)\]
+
+
+
+  二阶线性微分方程
+  #
+
+
+  二阶线性常系数齐次方程
+  #
+
+
+  \[
+y''+py'+qy=0
+\]
+
+
+
+  
+      
+          特征方程 
+  \(r^2+pr+q=0\)
+
+的两个根
+          微分方程
+  \(y''+py'+qy=0\)
+
+的通解
+      
+  
+  
+      
+          两个不相等的实根
+          
+  \(y=C_{1}e^{r_{1}x}+C_{2}e^{r_{2}x}\)
+
+
+      
+      
+          两个相等的实根
+          
+  \(y=(C_1+C_2x)e^{r_1x}\)
+
+
+      
+      
+          一对共轭复根 
+  \(r_{1,2}=\alpha \pm \beta i\)
+
+
+          
+  \(y=e^{\alpha x}(C_1 \cos \beta x + C_2 \sin \beta x)\)
+
+
+      
+  
+"><meta name=theme-color media="(prefers-color-scheme: light)" content="#ffffff"><meta name=theme-color media="(prefers-color-scheme: dark)" content="#343a40"><meta name=color-scheme content="light dark"><meta property="og:url" content="//localhost:1313/docs/math/calculus/%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/"><meta property="og:title" content="微分方程"><meta property="og:description" content="一阶线性微分方程 # \[ \dfrac{dy}{dx}+P(x)y=Q(x) \] 通解: \[ y=e^{-\int P(x)dx} \left[ \int Q(x) e^{\int P(x)dx}dx + C \right]\] 注意还有的形式是: \[\dfrac{dx}{dy} + P(y)x=Q(y)\] 二阶线性微分方程 # 二阶线性常系数齐次方程 # \[ y''+py'+qy=0 \] 特征方程 \(r^2+pr+q=0\) 的两个根 微分方程 \(y''+py'+qy=0\) 的通解 两个不相等的实根 \(y=C_{1}e^{r_{1}x}+C_{2}e^{r_{2}x}\) 两个相等的实根 \(y=(C_1+C_2x)e^{r_1x}\) 一对共轭复根 \(r_{1,2}=\alpha \pm \beta i\) \(y=e^{\alpha x}(C_1 \cos \beta x + C_2 \sin \beta x)\)"><meta property="og:locale" content="en"><meta property="og:type" content="article"><meta property="article:section" content="docs"><title>微分方程 | </title><link rel=icon href=/favicon.png><link rel=manifest href=/manifest.json><link rel=canonical href=//localhost:1313/docs/math/calculus/%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/><link rel=stylesheet href=/book.min.a7616cf2799b58bddffce9438e31fdbfc6393687cfc0950a4a17cd1cce7e35f6.css integrity="sha256-p2Fs8nmbWL3f/OlDjjH9v8Y5NofPwJUKShfNHM5+NfY=" crossorigin=anonymous><script defer src=/fuse.min.js></script><script defer src=/en.search.min.4a4548ba19770fd48fba86117cc8eb078b57c5cc39bfff4c4e7edd361d902dfc.js integrity="sha256-SkVIuhl3D9SPuoYRfMjrB4tXxcw5v/9MTn7dNh2QLfw=" crossorigin=anonymous></script></head><body dir=ltr><input type=checkbox class="hidden toggle" id=menu-control>
+<input type=checkbox class="hidden toggle" id=toc-control><main class="container flex"><aside class=book-menu><div class=book-menu-content><nav><h2 class=book-brand><a class="flex align-center" href=/><span></span></a></h2><div class="book-search hidden"><input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/><div class="book-search-spinner hidden"></div><ul id=book-search-results></ul></div><script>document.querySelector(".book-search").classList.remove("hidden")</script><ul><li><a href=/docs/math/>数学</a><ul><li><a href=/docs/math/calculus/>高等数学</a><ul><li><a href=/docs/math/calculus/%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/ class=active>微分方程</a></li></ul></li><li><a href=/docs/math/linear_algebra/>线性代数</a><ul></ul></li></ul></li><li><a href=/docs/408/>408专业课</a><ul><li><a href=/docs/408/data_structure/>数据结构</a><ul></ul></li><li><a href=/docs/408/computer_system/>操作系统</a><ul></ul></li><li><a href=/docs/408/computer_organization/>计算机组成原理</a><ul></ul></li><li><a href=/docs/408/computer_network/>计算机网络</a><ul></ul></li></ul></li><li><a href=/docs/english/>英语</a><ul></ul></li><li><a href=/docs/politics/>政治</a><ul></ul></li></ul></nav><script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script></div></aside><div class=book-page><header class=book-header><div class="flex align-center justify-between"><label for=menu-control><img src=/svg/menu.svg class=book-icon alt=Menu></label><h3>微分方程</h3><label for=toc-control><img src=/svg/toc.svg class=book-icon alt="Table of Contents"></label></div><aside class="hidden clearfix"><nav id=TableOfContents><ul><li><a href=#一阶线性微分方程>一阶线性微分方程</a></li><li><a href=#二阶线性微分方程>二阶线性微分方程</a><ul><li><a href=#二阶线性常系数齐次方程>二阶线性常系数齐次方程</a></li></ul></li></ul></nav></aside></header><article class="markdown book-article"><h2 id=一阶线性微分方程>一阶线性微分方程
+<a class=anchor href=#%e4%b8%80%e9%98%b6%e7%ba%bf%e6%80%a7%e5%be%ae%e5%88%86%e6%96%b9%e7%a8%8b>#</a></h2><p><link rel=stylesheet href=/katex/katex.min.css><script defer src=/katex/katex.min.js></script><script defer src=/katex/auto-render.min.js onload=renderMathInElement(document.body)></script><span>\[
+\dfrac{dy}{dx}+P(x)y=Q(x)
+\]
+</span>通解:
+<span>\[
+y=e^{-\int P(x)dx} \left[ \int Q(x) e^{\int P(x)dx}dx + C \right]\]
+</span>注意还有的形式是:
+<span>\[\dfrac{dx}{dy} + P(y)x=Q(y)\]</span></p><h2 id=二阶线性微分方程>二阶线性微分方程
+<a class=anchor href=#%e4%ba%8c%e9%98%b6%e7%ba%bf%e6%80%a7%e5%be%ae%e5%88%86%e6%96%b9%e7%a8%8b>#</a></h2><h3 id=二阶线性常系数齐次方程>二阶线性常系数齐次方程
+<a class=anchor href=#%e4%ba%8c%e9%98%b6%e7%ba%bf%e6%80%a7%e5%b8%b8%e7%b3%bb%e6%95%b0%e9%bd%90%e6%ac%a1%e6%96%b9%e7%a8%8b>#</a></h3><span>\[
+y''+py'+qy=0
+\]</span><table><thead><tr><th>特征方程 <span>\(r^2+pr+q=0\)
+</span>的两个根</th><th>微分方程<span>
+\(y''+py'+qy=0\)
+</span>的通解</th></tr></thead><tbody><tr><td>两个不相等的实根</td><td><span>\(y=C_{1}e^{r_{1}x}+C_{2}e^{r_{2}x}\)</span></td></tr><tr><td>两个相等的实根</td><td><span>\(y=(C_1+C_2x)e^{r_1x}\)</span></td></tr><tr><td>一对共轭复根 <span>\(r_{1,2}=\alpha \pm \beta i\)</span></td><td><span>\(y=e^{\alpha x}(C_1 \cos \beta x + C_2 \sin \beta x)\)</span></td></tr></tbody></table></article><footer class=book-footer><div class="flex flex-wrap justify-between"></div><script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script></footer><div class=book-comments></div><label for=menu-control class="hidden book-menu-overlay"></label></div><aside class=book-toc><div class=book-toc-content><nav id=TableOfContents><ul><li><a href=#一阶线性微分方程>一阶线性微分方程</a></li><li><a href=#二阶线性微分方程>二阶线性微分方程</a><ul><li><a href=#二阶线性常系数齐次方程>二阶线性常系数齐次方程</a></li></ul></li></ul></nav></div></aside></main></body></html>
