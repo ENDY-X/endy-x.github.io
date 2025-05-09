@@ -1,4 +1,9 @@
-<!doctype html><html lang=en dir=ltr><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="
   计算机组成原理
   #
 
@@ -59,12 +64,459 @@ CPU的功能和基本结构
 总线概述
 总线仲裁
 总线操作和定时
-"><meta name=theme-color media="(prefers-color-scheme: light)" content="#ffffff"><meta name=theme-color media="(prefers-color-scheme: dark)" content="#343a40"><meta name=color-scheme content="light dark"><meta property="og:url" content="//localhost:1313/docs/408/computer_organization/"><meta property="og:title" content="计算机组成原理"><meta property="og:description" content="计算机组成原理 # 计算机系统概述 # 计算机发展历程 计算机系统层次结构 计算机性能指标 数据的表示与运算 # 数制与编码 定点数的表示与运算 浮点数的表示与运算 算术逻辑单元 存储系统 # 存储器层次结构 主存储器 Cache 辅助存储器 指令系统 # 指令格式 寻址方式 指令集 中央处理器 # CPU的功能和基本结构 指令周期 数据通路 控制器 流水线技术 总线 # 总线概述 总线仲裁 总线操作和定时"><meta property="og:locale" content="en"><meta property="og:type" content="website"><title>计算机组成原理 | </title><link rel=icon href=/favicon.png><link rel=manifest href=/manifest.json><link rel=canonical href=//localhost:1313/docs/408/computer_organization/><link rel=stylesheet href=/book.min.a7616cf2799b58bddffce9438e31fdbfc6393687cfc0950a4a17cd1cce7e35f6.css integrity="sha256-p2Fs8nmbWL3f/OlDjjH9v8Y5NofPwJUKShfNHM5+NfY=" crossorigin=anonymous><script defer src=/fuse.min.js></script><script defer src=/en.search.min.4a4548ba19770fd48fba86117cc8eb078b57c5cc39bfff4c4e7edd361d902dfc.js integrity="sha256-SkVIuhl3D9SPuoYRfMjrB4tXxcw5v/9MTn7dNh2QLfw=" crossorigin=anonymous></script><link rel=alternate type=application/rss+xml href=//localhost:1313/docs/408/computer_organization/index.xml title></head><body dir=ltr><input type=checkbox class="hidden toggle" id=menu-control>
-<input type=checkbox class="hidden toggle" id=toc-control><main class="container flex"><aside class=book-menu><div class=book-menu-content><nav><h2 class=book-brand><a class="flex align-center" href=/><span></span></a></h2><div class="book-search hidden"><input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/><div class="book-search-spinner hidden"></div><ul id=book-search-results></ul></div><script>document.querySelector(".book-search").classList.remove("hidden")</script><ul><li><a href=/docs/math/>数学</a><ul><li><a href=/docs/math/calculus/>高等数学</a><ul><li><a href=/docs/math/calculus/%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/>微分方程</a></li></ul></li><li><a href=/docs/math/linear_algebra/>线性代数</a><ul></ul></li></ul></li><li><a href=/docs/408/>408专业课</a><ul><li><a href=/docs/408/data_structure/>数据结构</a><ul></ul></li><li><a href=/docs/408/computer_system/>操作系统</a><ul></ul></li><li><a href=/docs/408/computer_organization/ class=active>计算机组成原理</a><ul></ul></li><li><a href=/docs/408/computer_network/>计算机网络</a><ul></ul></li></ul></li><li><a href=/docs/english/>英语</a><ul></ul></li><li><a href=/docs/politics/>政治</a><ul></ul></li></ul></nav><script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script></div></aside><div class=book-page><header class=book-header><div class="flex align-center justify-between"><label for=menu-control><img src=/svg/menu.svg class=book-icon alt=Menu></label><h3>计算机组成原理</h3><label for=toc-control><img src=/svg/toc.svg class=book-icon alt="Table of Contents"></label></div><aside class="hidden clearfix"><nav id=TableOfContents><ul><li><a href=#计算机系统概述>计算机系统概述</a></li><li><a href=#数据的表示与运算>数据的表示与运算</a></li><li><a href=#存储系统>存储系统</a></li><li><a href=#指令系统>指令系统</a></li><li><a href=#中央处理器>中央处理器</a></li><li><a href=#总线>总线</a></li></ul></nav></aside></header><article class="markdown book-article"><h1 id=计算机组成原理>计算机组成原理
-<a class=anchor href=#%e8%ae%a1%e7%ae%97%e6%9c%ba%e7%bb%84%e6%88%90%e5%8e%9f%e7%90%86>#</a></h1><h2 id=计算机系统概述>计算机系统概述
-<a class=anchor href=#%e8%ae%a1%e7%ae%97%e6%9c%ba%e7%b3%bb%e7%bb%9f%e6%a6%82%e8%bf%b0>#</a></h2><ul><li>计算机发展历程</li><li>计算机系统层次结构</li><li>计算机性能指标</li></ul><h2 id=数据的表示与运算>数据的表示与运算
-<a class=anchor href=#%e6%95%b0%e6%8d%ae%e7%9a%84%e8%a1%a8%e7%a4%ba%e4%b8%8e%e8%bf%90%e7%ae%97>#</a></h2><ul><li>数制与编码</li><li>定点数的表示与运算</li><li>浮点数的表示与运算</li><li>算术逻辑单元</li></ul><h2 id=存储系统>存储系统
-<a class=anchor href=#%e5%ad%98%e5%82%a8%e7%b3%bb%e7%bb%9f>#</a></h2><ul><li>存储器层次结构</li><li>主存储器</li><li>Cache</li><li>辅助存储器</li></ul><h2 id=指令系统>指令系统
-<a class=anchor href=#%e6%8c%87%e4%bb%a4%e7%b3%bb%e7%bb%9f>#</a></h2><ul><li>指令格式</li><li>寻址方式</li><li>指令集</li></ul><h2 id=中央处理器>中央处理器
-<a class=anchor href=#%e4%b8%ad%e5%a4%ae%e5%a4%84%e7%90%86%e5%99%a8>#</a></h2><ul><li>CPU的功能和基本结构</li><li>指令周期</li><li>数据通路</li><li>控制器</li><li>流水线技术</li></ul><h2 id=总线>总线
-<a class=anchor href=#%e6%80%bb%e7%ba%bf>#</a></h2><ul><li>总线概述</li><li>总线仲裁</li><li>总线操作和定时</li></ul></article><footer class=book-footer><div class="flex flex-wrap justify-between"></div><script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script></footer><div class=book-comments></div><label for=menu-control class="hidden book-menu-overlay"></label></div><aside class=book-toc><div class=book-toc-content><nav id=TableOfContents><ul><li><a href=#计算机系统概述>计算机系统概述</a></li><li><a href=#数据的表示与运算>数据的表示与运算</a></li><li><a href=#存储系统>存储系统</a></li><li><a href=#指令系统>指令系统</a></li><li><a href=#中央处理器>中央处理器</a></li><li><a href=#总线>总线</a></li></ul></nav></div></aside></main></body></html>
+">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="/docs/408/computer_organization/">
+  <meta property="og:title" content="计算机组成原理">
+  <meta property="og:description" content="计算机组成原理 # 计算机系统概述 # 计算机发展历程 计算机系统层次结构 计算机性能指标 数据的表示与运算 # 数制与编码 定点数的表示与运算 浮点数的表示与运算 算术逻辑单元 存储系统 # 存储器层次结构 主存储器 Cache 辅助存储器 指令系统 # 指令格式 寻址方式 指令集 中央处理器 # CPU的功能和基本结构 指令周期 数据通路 控制器 流水线技术 总线 # 总线概述 总线仲裁 总线操作和定时">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="website">
+<title>计算机组成原理 | </title>
+<link rel="icon" href="/favicon.png" >
+<link rel="manifest" href="/manifest.json">
+<link rel="canonical" href="/docs/408/computer_organization/">
+<link rel="stylesheet" href="/book.min.a7616cf2799b58bddffce9438e31fdbfc6393687cfc0950a4a17cd1cce7e35f6.css" >
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/en.search.min.2aaba2c2aaec72e50996b14bedb7cb7858cda35bc8e6e015b34b8391723a214e.js" ></script>
+<link rel="alternate" type="application/rss+xml" href="/docs/408/computer_organization/index.xml" title="" />
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span></span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/math/" class="">数学</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/math/calculus/" class="">高等数学</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/math/calculus/%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/" class="">微分方程</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/math/linear_algebra/" class="">线性代数</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/408/" class="">408专业课</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/408/data_structure/" class="">数据结构</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/408/computer_system/" class="">操作系统</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/408/computer_organization/" class="active">计算机组成原理</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/408/computer_network/" class="">计算机网络</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/english/" class="">英语</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/politics/" class="">政治</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <h3>计算机组成原理</h3>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#计算机系统概述">计算机系统概述</a></li>
+    <li><a href="#数据的表示与运算">数据的表示与运算</a></li>
+    <li><a href="#存储系统">存储系统</a></li>
+    <li><a href="#指令系统">指令系统</a></li>
+    <li><a href="#中央处理器">中央处理器</a></li>
+    <li><a href="#总线">总线</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h1 id="计算机组成原理">
+  计算机组成原理
+  <a class="anchor" href="#%e8%ae%a1%e7%ae%97%e6%9c%ba%e7%bb%84%e6%88%90%e5%8e%9f%e7%90%86">#</a>
+</h1>
+<h2 id="计算机系统概述">
+  计算机系统概述
+  <a class="anchor" href="#%e8%ae%a1%e7%ae%97%e6%9c%ba%e7%b3%bb%e7%bb%9f%e6%a6%82%e8%bf%b0">#</a>
+</h2>
+<ul>
+<li>计算机发展历程</li>
+<li>计算机系统层次结构</li>
+<li>计算机性能指标</li>
+</ul>
+<h2 id="数据的表示与运算">
+  数据的表示与运算
+  <a class="anchor" href="#%e6%95%b0%e6%8d%ae%e7%9a%84%e8%a1%a8%e7%a4%ba%e4%b8%8e%e8%bf%90%e7%ae%97">#</a>
+</h2>
+<ul>
+<li>数制与编码</li>
+<li>定点数的表示与运算</li>
+<li>浮点数的表示与运算</li>
+<li>算术逻辑单元</li>
+</ul>
+<h2 id="存储系统">
+  存储系统
+  <a class="anchor" href="#%e5%ad%98%e5%82%a8%e7%b3%bb%e7%bb%9f">#</a>
+</h2>
+<ul>
+<li>存储器层次结构</li>
+<li>主存储器</li>
+<li>Cache</li>
+<li>辅助存储器</li>
+</ul>
+<h2 id="指令系统">
+  指令系统
+  <a class="anchor" href="#%e6%8c%87%e4%bb%a4%e7%b3%bb%e7%bb%9f">#</a>
+</h2>
+<ul>
+<li>指令格式</li>
+<li>寻址方式</li>
+<li>指令集</li>
+</ul>
+<h2 id="中央处理器">
+  中央处理器
+  <a class="anchor" href="#%e4%b8%ad%e5%a4%ae%e5%a4%84%e7%90%86%e5%99%a8">#</a>
+</h2>
+<ul>
+<li>CPU的功能和基本结构</li>
+<li>指令周期</li>
+<li>数据通路</li>
+<li>控制器</li>
+<li>流水线技术</li>
+</ul>
+<h2 id="总线">
+  总线
+  <a class="anchor" href="#%e6%80%bb%e7%ba%bf">#</a>
+</h2>
+<ul>
+<li>总线概述</li>
+<li>总线仲裁</li>
+<li>总线操作和定时</li>
+</ul>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#计算机系统概述">计算机系统概述</a></li>
+    <li><a href="#数据的表示与运算">数据的表示与运算</a></li>
+    <li><a href="#存储系统">存储系统</a></li>
+    <li><a href="#指令系统">指令系统</a></li>
+    <li><a href="#中央处理器">中央处理器</a></li>
+    <li><a href="#总线">总线</a></li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

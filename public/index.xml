@@ -1,78 +1,25 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>说明 on</title><link>//localhost:1313/</link><description>Recent content in 说明 on</description><generator>Hugo</generator><language>en</language><atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml"/><item><title>微分方程</title><link>//localhost:1313/docs/math/calculus/%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//localhost:1313/docs/math/calculus/%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/</guid><description>&lt;h2 id="一阶线性微分方程">
- 一阶线性微分方程
- &lt;a class="anchor" href="#%e4%b8%80%e9%98%b6%e7%ba%bf%e6%80%a7%e5%be%ae%e5%88%86%e6%96%b9%e7%a8%8b">#&lt;/a>
-&lt;/h2>
-&lt;p>
-&lt;link rel="stylesheet" href="//localhost:1313/katex/katex.min.css" />
-&lt;script defer src="//localhost:1313/katex/katex.min.js">&lt;/script>
-&lt;script defer src="//localhost:1313/katex/auto-render.min.js" onload="renderMathInElement(document.body);">&lt;/script>&lt;span>
- \[
-\dfrac{dy}{dx}+P(x)y=Q(x)
-\]
-&lt;/span>
-
-通解:
-&lt;span>
- \[
-y=e^{-\int P(x)dx} \left[ \int Q(x) e^{\int P(x)dx}dx + C \right]\]
-&lt;/span>
-
-注意还有的形式是:
-&lt;span>
- \[\dfrac{dx}{dy} + P(y)x=Q(y)\]
-&lt;/span>
-&lt;/p>
-&lt;h2 id="二阶线性微分方程">
- 二阶线性微分方程
- &lt;a class="anchor" href="#%e4%ba%8c%e9%98%b6%e7%ba%bf%e6%80%a7%e5%be%ae%e5%88%86%e6%96%b9%e7%a8%8b">#&lt;/a>
-&lt;/h2>
-&lt;h3 id="二阶线性常系数齐次方程">
- 二阶线性常系数齐次方程
- &lt;a class="anchor" href="#%e4%ba%8c%e9%98%b6%e7%ba%bf%e6%80%a7%e5%b8%b8%e7%b3%bb%e6%95%b0%e9%bd%90%e6%ac%a1%e6%96%b9%e7%a8%8b">#&lt;/a>
-&lt;/h3>
-&lt;span>
- \[
-y''+py'+qy=0
-\]
-&lt;/span>
-
-&lt;table>
- &lt;thead>
- &lt;tr>
- &lt;th>特征方程 &lt;span>
- \(r^2+pr+q=0\)
-&lt;/span>
-的两个根&lt;/th>
- &lt;th>微分方程&lt;span>
- \(y''+py'+qy=0\)
-&lt;/span>
-的通解&lt;/th>
- &lt;/tr>
- &lt;/thead>
- &lt;tbody>
- &lt;tr>
- &lt;td>两个不相等的实根&lt;/td>
- &lt;td>&lt;span>
- \(y=C_{1}e^{r_{1}x}+C_{2}e^{r_{2}x}\)
-&lt;/span>
-&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>两个相等的实根&lt;/td>
- &lt;td>&lt;span>
- \(y=(C_1+C_2x)e^{r_1x}\)
-&lt;/span>
-&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>一对共轭复根 &lt;span>
- \(r_{1,2}=\alpha \pm \beta i\)
-&lt;/span>
-&lt;/td>
- &lt;td>&lt;span>
- \(y=e^{\alpha x}(C_1 \cos \beta x + C_2 \sin \beta x)\)
-&lt;/span>
-&lt;/td>
- &lt;/tr>
- &lt;/tbody>
-&lt;/table></description></item><item><title/><link>//localhost:1313/docs/408/hidden/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//localhost:1313/docs/408/hidden/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>说明 on </title>
+    <link>/</link>
+    <description>Recent content in 说明 on </description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>微分方程</title>
+      <link>/docs/math/calculus/%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/math/calculus/%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/</guid>
+      <description>&lt;h2 id=&#34;一阶线性微分方程&#34;&gt;&#xA;  一阶线性微分方程&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e4%b8%80%e9%98%b6%e7%ba%bf%e6%80%a7%e5%be%ae%e5%88%86%e6%96%b9%e7%a8%8b&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;&#xA;&lt;link rel=&#34;stylesheet&#34; href=&#34;/katex/katex.min.css&#34; /&gt;&#xA;&lt;script defer src=&#34;/katex/katex.min.js&#34;&gt;&lt;/script&gt;&#xA;&lt;script defer src=&#34;/katex/auto-render.min.js&#34; onload=&#34;renderMathInElement(document.body);&#34;&gt;&lt;/script&gt;&lt;span&gt;&#xA;  \[&#xA;\dfrac{dy}{dx}+P(x)y=Q(x)&#xA;\]&#xA;&lt;/span&gt;&#xA;&#xA;通解:&#xA;&lt;span&gt;&#xA;  \[&#xA;y=e^{-\int P(x)dx} \left[ \int Q(x) e^{\int P(x)dx}dx + C \right]\]&#xA;&lt;/span&gt;&#xA;&#xA;注意还有的形式是:&#xA;&lt;span&gt;&#xA;  \[\dfrac{dx}{dy} + P(y)x=Q(y)\]&#xA;&lt;/span&gt;&#xA;&lt;/p&gt;&#xA;&lt;h2 id=&#34;二阶线性微分方程&#34;&gt;&#xA;  二阶线性微分方程&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e4%ba%8c%e9%98%b6%e7%ba%bf%e6%80%a7%e5%be%ae%e5%88%86%e6%96%b9%e7%a8%8b&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;h3 id=&#34;二阶线性常系数齐次方程&#34;&gt;&#xA;  二阶线性常系数齐次方程&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e4%ba%8c%e9%98%b6%e7%ba%bf%e6%80%a7%e5%b8%b8%e7%b3%bb%e6%95%b0%e9%bd%90%e6%ac%a1%e6%96%b9%e7%a8%8b&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;span&gt;&#xA;  \[&#xA;y&#39;&#39;+py&#39;+qy=0&#xA;\]&#xA;&lt;/span&gt;&#xA;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;特征方程 &lt;span&gt;&#xA;  \(r^2+pr+q=0\)&#xA;&lt;/span&gt;&#xA;的两个根&lt;/th&gt;&#xA;          &lt;th&gt;微分方程&lt;span&gt;&#xA;  \(y&#39;&#39;+py&#39;+qy=0\)&#xA;&lt;/span&gt;&#xA;的通解&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;两个不相等的实根&lt;/td&gt;&#xA;          &lt;td&gt;&lt;span&gt;&#xA;  \(y=C_{1}e^{r_{1}x}+C_{2}e^{r_{2}x}\)&#xA;&lt;/span&gt;&#xA;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;两个相等的实根&lt;/td&gt;&#xA;          &lt;td&gt;&lt;span&gt;&#xA;  \(y=(C_1+C_2x)e^{r_1x}\)&#xA;&lt;/span&gt;&#xA;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;一对共轭复根 &lt;span&gt;&#xA;  \(r_{1,2}=\alpha \pm \beta i\)&#xA;&lt;/span&gt;&#xA;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;span&gt;&#xA;  \(y=e^{\alpha x}(C_1 \cos \beta x + C_2 \sin \beta x)\)&#xA;&lt;/span&gt;&#xA;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>/docs/408/hidden/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/408/hidden/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
